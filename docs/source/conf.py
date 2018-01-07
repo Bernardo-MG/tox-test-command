@@ -111,7 +111,7 @@ html_theme_options = {
     'issues_url': 'https://github.com/Bernardo-MG/tox-test-command/issues',
     'releases_repos': [
         ('Pypi',
-         'https://pypi.python.org/pypi/tox-test-command')],
+         'https://pypi.python.org/pypi/bernardomg.tox-test-command')],
     'general_info_links': [('Acquire', './acquire.html'),
                            ('Usage', './usage.html')],
     'navbar_links': [('Documentation', [('Acquire', './acquire.html'),

@@ -16,7 +16,7 @@ file, where the test command will be overriden.
 This is detailed in the usage section.
 
 .. image:: https://badge.fury.io/py/tox-test-command.svg
-    :target: https://pypi.python.org/pypi/tox-test-command
+    :target: https://pypi.python.org/pypi/bernardomg.tox-test-command
     :alt: tox Test Command Pypi package page
 
 .. image:: https://img.shields.io/badge/docs-release-blue.svg
@@ -144,7 +144,7 @@ The project has been released under the `MIT License`_.
 .. _GitHub project page: https://github.com/Bernardo-MG/tox-test-command
 .. _latest docs: http://docs.bernardomg.com/tox-test-command
 .. _development docs: http://docs.bernardomg.com/development/tox-test-command
-.. _Pypi package: https://pypi.python.org/pypi/tox-test-command
+.. _Pypi package: https://pypi.python.org/pypi/bernardomg.tox-test-command
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/Bernardo-MG/tox-test-command/issues
 .. _Sphinx: http://sphinx-doc.org/

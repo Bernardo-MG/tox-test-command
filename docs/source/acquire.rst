@@ -10,4 +10,4 @@ For this, just use the following command:
 
     $ pip install tox-test-command
 
-.. _Pypi: https://pypi.python.org/pypi/tox-test-command
+.. _Pypi: https://pypi.python.org/pypi/bernardomg.tox-test-command

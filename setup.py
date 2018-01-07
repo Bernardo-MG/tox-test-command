@@ -91,7 +91,7 @@ setup(
     author_email='programming@bernardomg.com',
     license='MIT',
     url='https://github.com/Bernardo-MG/tox-test-command',
-    download_url='https://pypi.python.org/pypi/tox-test-command',
+    download_url='https://pypi.python.org/pypi/bernardomg.tox-test-command',
     keywords=[],
     platforms='any',
     classifiers=[
