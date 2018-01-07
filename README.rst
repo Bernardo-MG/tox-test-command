@@ -15,7 +15,7 @@ file, where the test command will be overriden.
 
 This is detailed in the usage section.
 
-.. image:: https://badge.fury.io/py/tox-test-command.svg
+.. image:: https://badge.fury.io/py/bernardomg.tox-test-command.svg
     :target: https://pypi.python.org/pypi/bernardomg.tox-test-command
     :alt: tox Test Command Pypi package page
 
