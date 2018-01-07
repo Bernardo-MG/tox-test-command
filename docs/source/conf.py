@@ -20,7 +20,7 @@ _version_re = re.compile(r'__version__\s+=\s+(.*)')
 here = path.abspath(path.dirname(__file__))
 
 # Gets the version for the source folder __init__.py file
-with open('../../bernardomg/tox-test-command/__init__.py', 'rb',
+with open('../../bernardomg/tox_test_command/__init__.py', 'rb',
           encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
