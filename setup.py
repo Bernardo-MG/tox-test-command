@@ -19,7 +19,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'bernardomg'
+_source_package = 'bernardomg/tox_test_command/'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
@@ -37,7 +37,7 @@ def read(*names, **kwargs):
 
 
 # Gets the version for the source folder __init__.py file
-with open(_source_package + '/__init__.py', 'rb',
+with open(_source_package + '__init__.py', 'rb',
           encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
