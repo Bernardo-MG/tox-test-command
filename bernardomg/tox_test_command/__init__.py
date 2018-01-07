@@ -9,3 +9,5 @@
 
 __version__ = '1.0.1'
 __license__ = 'MIT'
+
+from bernardomg.tox_test_command.command import ToxTestCommand
