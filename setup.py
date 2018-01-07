@@ -7,7 +7,7 @@ from os.path import join
 from codecs import open
 
 from setuptools import find_packages, setup
-from bernardomg.tox_test_command import ToxTestCommand
+from tox_test_command import ToxTestCommand
 
 """
 PyPI configuration module.
@@ -18,7 +18,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'bernardomg/tox_test_command/'
+_source_package = 'tox_test_command/'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
