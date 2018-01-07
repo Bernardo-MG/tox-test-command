@@ -14,6 +14,18 @@ It can be used to override the default test command with ease::
         ...
     )
 
+This way the usual command for running tests will call the new command:
+
+```
+$ python setup.py test
+```
+
+It is possible to run a specific tox profile:
+
+```
+$ python setup.py test -p [profile-name]
+```
+
 -------
 Testing
 -------
