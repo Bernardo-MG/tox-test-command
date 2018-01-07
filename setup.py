@@ -19,7 +19,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'tox-test-command'
+_source_package = 'bernardomg'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
@@ -80,7 +80,7 @@ class _ToxTester(test_command):
 
 
 setup(
-    name='tox-test-command',
+    name='bernardomg.tox-test-command',
     packages=find_packages(),
     include_package_data=True,
     package_data={
