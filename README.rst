@@ -1,6 +1,6 @@
-===============================
+================
 tox Test Command
-===============================
+================
 
 Command for running tox tests with `setuptools`_.
 
