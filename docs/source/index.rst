@@ -29,3 +29,5 @@ Features
    usage
    reports
    code/index
+
+.. _setuptools: https://github.com/pypa/setuptools
