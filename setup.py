@@ -7,7 +7,7 @@ from os.path import join
 from codecs import open
 
 from setuptools import find_packages, setup
-from tox_test_command import ToxTestCommand
+from bernardomg.tox_test_command import ToxTestCommand
 
 """
 PyPI configuration module.
