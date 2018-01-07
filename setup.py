@@ -108,7 +108,8 @@ setup(
     ],
     long_description=read('README.rst'),
     install_requires=[
-        'setuptools'
+        'setuptools',
+        'tox'
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
