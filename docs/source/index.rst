@@ -1,17 +1,26 @@
-===============================
+================
 tox Test Command
-===============================
+================
 
-This is the documentation for a Python library. Change all the placeholder
-texts with actual information.
+Command for running tox tests with `setuptools`_.
+
+This way the usual command for running tests will call tox:
+
+```
+$ python setup.py test
+```
+
+To achieve this the project should be using setuptools, and contain a setup.py
+file, where the test command will be overriden.
+
+This is detailed in the usage section.
 
 --------
 Features
 --------
 
-- A feature
-- Another feature
-- A third feature
+- Running test with tox in any project using setuptools
+- Running a specific tox profile
 
 .. toctree::
    :hidden:
@@ -20,3 +29,5 @@ Features
    usage
    reports
    code/index
+
+.. _setuptools: https://github.com/pypa/setuptools
