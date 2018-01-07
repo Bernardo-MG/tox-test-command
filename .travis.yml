@@ -19,7 +19,7 @@ matrix:
       env: TEST_DOCS=true
     # Tests and deploys docs, also runs coverage report
     - python: "3.6"
-      env: COVERAGE=true TEST_DOCS=true DEPLOY_DOCS=true
+      env: TEST_DOCS=true DEPLOY_DOCS=true
 addons:
   apt:
     packages:

@@ -4,4 +4,4 @@ Code docs
 
 .. toctree::
 
-   placeholder
+   command

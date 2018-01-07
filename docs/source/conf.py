@@ -20,7 +20,7 @@ _version_re = re.compile(r'__version__\s+=\s+(.*)')
 here = path.abspath(path.dirname(__file__))
 
 # Gets the version for the source folder __init__.py file
-with open('../../tox-test-command/__init__.py', 'rb',
+with open('../../bernardomg/tox_test_command/__init__.py', 'rb',
           encoding='utf-8') as f:
     version_lib = f.read()
     version_lib = _version_re.search(version_lib).group(1)
@@ -111,7 +111,7 @@ html_theme_options = {
     'issues_url': 'https://github.com/Bernardo-MG/tox-test-command/issues',
     'releases_repos': [
         ('Pypi',
-         'https://pypi.python.org/pypi/tox-test-command')],
+         'https://pypi.python.org/pypi/bernardomg.tox-test-command')],
     'general_info_links': [('Acquire', './acquire.html'),
                            ('Usage', './usage.html')],
     'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
