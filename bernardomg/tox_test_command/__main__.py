@@ -19,6 +19,9 @@ class ToxTestCommand(test_command):
         ('profile=', 'p', 'Test profile to use')
     ]
 
+    def __init__(self):
+        super(test_command, self).__init__()
+
     def initialize_options(self):
         test_command.initialize_options(self)
         self.profile = None
