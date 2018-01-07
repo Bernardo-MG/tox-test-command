@@ -2,9 +2,29 @@
 Usage
 =====
 
-Describe here how to use the library with some general use examples.
+The application is meant for projects using `setuptools`_.
 
-Any detailed topic should go into it's own section.
+It can be used to override the default test command with ease::
+
+    from bernardomg.tox_test_command import ToxTestCommand
+
+    setup(
+        ...
+        cmdclass={'test': ToxTestCommand},
+        ...
+    )
+
+This way the usual command for running tests will call the new command:
+
+```
+$ python setup.py test
+```
+
+It is possible to run a specific tox profile:
+
+```
+$ python setup.py test -p [profile-name]
+```
 
 -------
 Testing
@@ -23,3 +43,5 @@ It is possible to run just one of the test profiles, in this case the py36 profi
 .. code::
 
     $ python setup.py test -p "py36"
+
+.. _setuptools: https://github.com/pypa/setuptools

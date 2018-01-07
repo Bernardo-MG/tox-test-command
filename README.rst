@@ -2,40 +2,35 @@
 tox Test Command
 ===============================
 
-This is a project created with the `Cookiecutter Python Library
-<https://github.com/Bernardo-MG/cookiecutter-python-library>`_ template and
-ready to be used for creating a new Python library.
+Command for running tox tests with `setuptools`_.
 
-Just check the readme and docs, to adapt them to your project, and it is done.
+This way the usual command for running tests will call tox:
 
-Remember that if you want to create a new project it is better just reusing
-the Cookiecutter Python Library template, as this will set up the initial
-project according to a few pieces of data it will ask for.
+```
+$ python setup.py test
+```
+
+To achieve this the project should be using setuptools, and contain a setup.py
+file, where the test command will be overriden.
+
+This is detailed in the usage section.
 
 .. image:: https://badge.fury.io/py/tox-test-command.svg
     :target: https://pypi.python.org/pypi/tox-test-command
     :alt: tox Test Command Pypi package page
 
-.. image:: https://readthedocs.org/projects/tox-test-command/badge/?version=latest
+.. image:: https://img.shields.io/badge/docs-release-blue.svg
     :target: http://docs.bernardomg.com/tox-test-command
     :alt: tox Test Command latest documentation Status
-.. image:: https://readthedocs.org/projects/tox-test-command/badge/?version=develop
+.. image:: https://img.shields.io/badge/docs-develop-blue.svg
     :target: http://docs.bernardomg.com/development/tox-test-command
     :alt: tox Test Command development documentation Status
 
 Features
 --------
 
-By default the project comes with the following features:
-
-- Travis configuration file
-- Customized setup.py module to minimize configuration, and using tox for the tests
-- Docs using `Sphinx`_ and the `Sphinx Docs Theme <https://github.com/Bernardo-MG/sphinx-docs-theme>`_
-- Prepared to run tests through tox
-- Prepared to run tests on Python 2 and 3
-- Prepared to run tests on pypy and pypy 3
-- Prepared to run coverage tests and integrate with `Coveralls <https://coveralls.io>`_
-- Prepared to run tests for the `Sphinx`_ documentation
+- Running test with tox in any project using setuptools
+- Running a specific tox profile
 
 Documentation
 -------------
@@ -83,8 +78,29 @@ If needed, manual installation is possible:
 Usage
 -----
 
-The application has been coded in Python, and does not require any particular
-framework.
+The application has been coded in Python, and is meant for projects using `setuptools`_.
+
+It can be used to override the default test command with ease::
+
+    from bernardomg.tox_test_command import ToxTestCommand
+
+    setup(
+        ...
+        cmdclass={'test': ToxTestCommand},
+        ...
+    )
+
+This way the usual command for running tests will call the new command:
+
+```
+$ python setup.py test
+```
+
+It is possible to run a specific tox profile:
+
+```
+$ python setup.py test -p [profile-name]
+```
 
 Testing
 -------
@@ -132,3 +148,5 @@ The project has been released under the `MIT License`_.
 .. _MIT License: http://www.opensource.org/licenses/mit-license.php
 .. _project issues tracker: https://github.com/Bernardo-MG/tox-test-command/issues
 .. _Sphinx: http://sphinx-doc.org/
+
+.. _setuptools: https://github.com/pypa/setuptools

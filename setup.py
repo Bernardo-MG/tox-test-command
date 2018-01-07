@@ -19,7 +19,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'tox-test-command'
+_source_package = 'bernardomg'
 
 # Regular expression for the version
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
@@ -80,7 +80,7 @@ class _ToxTester(test_command):
 
 
 setup(
-    name='tox-test-command',
+    name='bernardomg.tox-test-command',
     packages=find_packages(),
     include_package_data=True,
     package_data={
@@ -95,7 +95,7 @@ setup(
     keywords=[],
     platforms='any',
     classifiers=[
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 5 - Production/Stable',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
@@ -108,6 +108,7 @@ setup(
     ],
     long_description=read('README.rst'),
     install_requires=[
+        'setuptools'
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
