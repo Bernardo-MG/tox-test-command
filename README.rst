@@ -82,11 +82,11 @@ The application has been coded in Python, and is meant for projects using `setup
 
 It can be used to override the default test command with ease::
 
-    import tox-test-command as test_command
+    from bernardomg.tox_test_command import ToxTestCommand
 
     setup(
         ...
-        cmdclass={'test': test_command},
+        cmdclass={'test': ToxTestCommand},
         ...
     )
 

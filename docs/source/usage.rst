@@ -6,11 +6,11 @@ The application is meant for projects using `setuptools`_.
 
 It can be used to override the default test command with ease::
 
-    import tox-test-command as test_command
+    from bernardomg.tox_test_command import ToxTestCommand
 
     setup(
         ...
-        cmdclass={'test': test_command},
+        cmdclass={'test': ToxTestCommand},
         ...
     )
 
