@@ -34,10 +34,6 @@ before_install:
   - source ~/.scripts/travis/load-travis-environment.sh
   - source ~/.scripts/travis/load-travis-environment-python.sh
 install:
-  # tox is required for the tests
-  - pip install tox
-  # sphinx is required for the docs
-  - pip install sphinx
   # Dependencies
   - pip install --upgrade -r requirements.txt
 script:
