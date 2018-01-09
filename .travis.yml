@@ -4,19 +4,13 @@
 # Using Python for the project
 language: python
 python:
-  # Python 2.7 is set to test the docs in the configuration matrix
-  #- "2.7"
   - "3.4"
   - "3.5"
   # Python 3.6 is set to test and deploy the docs, and to run the coverage report, in the configuration matrix
   #- "3.6"
-  - "pypy"
   - "pypy3"
 matrix:
   include:
-    # Tests docs
-    - python: "2.7"
-      env: TEST_DOCS=true
     # Tests and deploys docs, also runs coverage report
     - python: "3.6"
       env: TEST_DOCS=true DEPLOY_DOCS=true
