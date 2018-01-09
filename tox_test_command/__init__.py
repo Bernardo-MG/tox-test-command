@@ -7,7 +7,7 @@
     :license: MIT, see LICENSE for more details.
 """
 
-__version__ = '1.1.2'
+__version__ = '1.1.3'
 __license__ = 'MIT'
 
 from tox_test_command.command import ToxTestCommand
