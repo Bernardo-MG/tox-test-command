@@ -2,7 +2,7 @@
 Tox Test Command
 ================
 
-.. automodule:: bernardomg.tox_test_command
+.. automodule:: tox_test_command
     :members:
     :undoc-members:
     :inherited-members:

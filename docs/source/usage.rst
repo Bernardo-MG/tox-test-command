@@ -6,7 +6,7 @@ The application is meant for projects using `setuptools`_.
 
 It can be used to override the default test command with ease::
 
-    from bernardomg.tox_test_command import ToxTestCommand
+    from tox_test_command import ToxTestCommand
 
     setup(
         ...

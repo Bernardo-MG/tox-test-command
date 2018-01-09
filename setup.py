@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
-import ast
-import re
 import io
 from os.path import dirname
 from os.path import join
-from codecs import open
 
 from setuptools import find_packages, setup
-from bernardomg.tox_test_command import ToxTestCommand
+from tox_test_command import ToxTestCommand
+from version_extractor import extract_version_init
 
 """
 PyPI configuration module.
@@ -18,10 +16,7 @@ This is prepared for easing the generation of deployment files.
 __license__ = 'MIT'
 
 # Source package
-_source_package = 'bernardomg/tox_test_command/'
-
-# Regular expression for the version
-_version_re = re.compile(r'__version__\s+=\s+(.*)')
+_source_package = 'tox_test_command/'
 
 # Test requirements
 _tests_require = ['tox']
@@ -35,21 +30,13 @@ def read(*names, **kwargs):
     ).read()
 
 
-# Gets the version for the source folder __init__.py file
-with open(_source_package + '__init__.py', 'rb',
-          encoding='utf-8') as f:
-    version_lib = f.read()
-    version_lib = _version_re.search(version_lib).group(1)
-    version_lib = str(ast.literal_eval(version_lib.rstrip()))
-
-
 setup(
     name='bernardomg.tox-test-command',
     packages=find_packages(),
     include_package_data=True,
     package_data={
     },
-    version=version_lib,
+    version=extract_version_init(_source_package),
     description='setuptools command for running tests using tox',
     author='Bernardo MartÃ\xadnez Garrido',
     author_email='programming@bernardomg.com',

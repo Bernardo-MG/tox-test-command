@@ -82,7 +82,7 @@ The application has been coded in Python, and is meant for projects using `setup
 
 It can be used to override the default test command with ease::
 
-    from bernardomg.tox_test_command import ToxTestCommand
+    from tox_test_command import ToxTestCommand
 
     setup(
         ...
