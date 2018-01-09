@@ -60,7 +60,8 @@ setup(
     long_description=read('README.rst'),
     install_requires=[
         'setuptools',
-        'tox'
+        'tox',
+        'bernardomg.version-extractor'
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
