@@ -6,7 +6,7 @@ Command for running tox tests with `setuptools`_.
 
 This way the usual command for running tests will call tox:
 
-``$ python setup.py test``
+    python setup.py test
 
 To achieve this the project should be using setuptools, and contain a setup.py
 file, where the test command will be overriden.
@@ -59,9 +59,7 @@ All other dependencies are indicated on the requirements.txt file.
 
 These can be installed with:
 
-```
-pip install --upgrade -r requirements.txt
-```
+    pip install --upgrade -r requirements.txt
 
 Installing
 ~~~~~~~~~~
@@ -69,15 +67,11 @@ Installing
 The project is offered as a `Pypi package`_, and using pip is the preferred way
 to install it. For this use the following command;
 
-```
-pip install tox-test-command
-```
+    pip install tox-test-command
 
 If needed, manual installation is possible:
 
-```
-python setup.py install
-```
+    python setup.py install
 
 Usage
 -----
@@ -96,32 +90,24 @@ It can be used to override the default test command with ease::
 
 This way the usual command for running tests will call the new command:
 
-```
-python setup.py test
-```
+    python setup.py test
 
 It is possible to run a specific tox profile:
 
-```
-python setup.py test -p [profile-name]
-```
+    python setup.py test -p [profile-name]
 
 Testing
 -------
 
 The tests included with the project can be run with:
 
-```
-python setup.py test
-```
+    python setup.py test
 
 This will delegate the execution to tox.
 
 It is possible to run just one of the test profiles, in this case the py36 profile:
 
-```
-python setup.py test -p "py36"
-```
+    python setup.py test -p "py36"
 
 Collaborate
 -----------
