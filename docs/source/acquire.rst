@@ -8,6 +8,6 @@ For this, just use the following command:
 
 .. code::
 
-    $ pip install tox-test-command
+    $ pip install bernardomg.tox-test-command
 
 .. _Pypi: https://pypi.python.org/pypi/bernardomg.tox-test-command
