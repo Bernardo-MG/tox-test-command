@@ -1,11 +1,11 @@
 # Installation and deployment
-setuptools==38.2.5
-twine==1.9.1
+setuptools==41.0.0
+twine==1.13.0
 
 # Testing
-tox==2.9.1
+tox==3.9.0
 
 # Documentation
-Sphinx==1.6.5
-sphinx-docs-theme==0.2.3
-Pygments==2.2.0
+Sphinx==2.0.1
+sphinx-docs-theme==0.3.2
+Pygments==2.3.1
