@@ -2,6 +2,7 @@
 # @link https://travis-ci.org/
 
 # Using Python for the project
+dist: xenial
 language: python
 python:
   - "3.4"
