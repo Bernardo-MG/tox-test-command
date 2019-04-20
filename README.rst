@@ -67,7 +67,7 @@ Installing
 The project is offered as a `Pypi package`_, and using pip is the preferred way
 to install it. For this use the following command;
 
-    pip install tox-test-command
+    pip install bernardomg.tox-test-command
 
 If needed, manual installation is possible:
 
