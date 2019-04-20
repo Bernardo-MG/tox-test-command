@@ -6,9 +6,7 @@ Command for running tox tests with `setuptools`_.
 
 This way the usual command for running tests will call tox:
 
-```
-$ python setup.py test
-```
+    python setup.py test
 
 To achieve this the project should be using setuptools, and contain a setup.py
 file, where the test command will be overriden.
