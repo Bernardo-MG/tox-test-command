@@ -60,7 +60,7 @@ autodoc_member_order = 'groupwise'
 # General information about the project.
 project = 'tox Test Command'
 project_safe = project.replace(' ', '_')
-copyright = u'2018, Bernardo MartÃ­nez Garrido'
+copyright = u'2018-2020, Bernardo MartÃ­nez Garrido'
 authors = [u'Bernardo MartÃ­nez Garrido']
 
 # The version info for the project.
