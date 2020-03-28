@@ -4,11 +4,8 @@
 # Using Python for the project
 language: python
 python:
-  - "3.4"
-  - "3.5"
-  # Python 3.6 is set to test and deploy the docs, and to run the coverage report, in the configuration matrix
-  #- "3.6"
-  - "pypy3"
+  - "3.7"
+  - "3.8"
 matrix:
   include:
     # Tests and deploys docs, also runs coverage report
