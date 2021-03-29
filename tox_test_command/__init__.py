@@ -3,7 +3,7 @@
     tox Test Command
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     setuptools command for running tests using tox
-    :copyright: (c) 2018-2020 by Bernardo MartÃ­nez Garrido
+    :copyright: (c) 2018-2021 by Bernardo MartÃ­nez Garrido
     :license: MIT, see LICENSE for more details.
 """
 
