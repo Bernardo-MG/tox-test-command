@@ -105,8 +105,8 @@ html_theme_options = {
     'years': datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/tox-test-command',
-    'ci_name': 'Travis',
-    'ci_url': 'https://travis-ci.org/Bernardo-MG/tox-test-command',
+    'ci_name': 'Github',
+    'ci_url': 'https://github.com/Bernardo-MG/tox-test-command/actions',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/Bernardo-MG/tox-test-command/issues',
     'releases_repos': [
