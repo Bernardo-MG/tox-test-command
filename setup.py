@@ -5,6 +5,7 @@ from os.path import join
 
 from setuptools import find_packages, setup
 from tox_test_command import ToxTestCommand
+from sphinx.setup_command import BuildDoc
 
 import ast
 import re
@@ -85,10 +86,10 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: Implementation :: PyPy'
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9'
     ],
     long_description=read('README.rst'),
     install_requires=[
@@ -97,5 +98,8 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
 )

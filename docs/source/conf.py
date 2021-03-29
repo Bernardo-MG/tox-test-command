@@ -60,7 +60,7 @@ autodoc_member_order = 'groupwise'
 # General information about the project.
 project = 'tox Test Command'
 project_safe = project.replace(' ', '_')
-copyright = u'2018, Bernardo MartÃ­nez Garrido'
+copyright = u'2018-2021, Bernardo MartÃ­nez Garrido'
 authors = [u'Bernardo MartÃ­nez Garrido']
 
 # The version info for the project.
@@ -105,8 +105,8 @@ html_theme_options = {
     'years': datetime.datetime.now().year,
     'scm_name': 'Github',
     'scm_url': 'https://github.com/Bernardo-MG/tox-test-command',
-    'ci_name': 'Travis',
-    'ci_url': 'https://travis-ci.org/Bernardo-MG/tox-test-command',
+    'ci_name': 'Github',
+    'ci_url': 'https://github.com/Bernardo-MG/tox-test-command/actions',
     'issues_name': 'Github',
     'issues_url': 'https://github.com/Bernardo-MG/tox-test-command/issues',
     'releases_repos': [
@@ -116,8 +116,7 @@ html_theme_options = {
                            ('Usage', './usage.html')],
     'navbar_links': [('Documentation', [('Acquire', './acquire.html'),
                                         ('Usage', './usage.html')]),
-                     ('Info and Reports', [('Reports', './reports.html'),
-                                           ('Code docs', './code/index.html')])],
+                     ('Info and Reports', [('Code docs', './code/index.html')])],
 }
 
 # Output file base name for HTML help builder.
