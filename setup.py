@@ -5,6 +5,7 @@ from os.path import join
 
 from setuptools import find_packages, setup
 from tox_test_command import ToxTestCommand
+from sphinx.setup_command import BuildDoc
 
 import ast
 import re
@@ -97,5 +98,8 @@ setup(
     ],
     tests_require=_tests_require,
     extras_require={'test': _tests_require},
-    cmdclass={'test': ToxTestCommand},
+    cmdclass={
+        'build_docs': BuildDoc,
+        'test': ToxTestCommand
+    },
 )
